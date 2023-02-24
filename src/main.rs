@@ -5,9 +5,9 @@ use giza_runner::ExecutionTrace;
 
 fn main() {
     let trace = ExecutionTrace::from_file(
-        PathBuf::from("../trace/program.json"),
-        PathBuf::from("../trace/trace.bin"),
-        PathBuf::from("../trace/memory.bin"),
+        PathBuf::from("trace/program.json"),
+        PathBuf::from("trace/trace.bin"),
+        PathBuf::from("trace/memory.bin"),
         Some(3),
     );
 
