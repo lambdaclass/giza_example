@@ -1,0 +1,12 @@
+[package]
+name = "giza_example"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+giza_air = { package = "giza-air", git = "https://github.com/zerosync/giza", version = "0.1", default-features = false  }
+giza_core = { package = "giza-core", git = "https://github.com/zerosync/giza", version = "0.1", default-features = false }
+giza_runner = { package = "giza-runner", git = "https://github.com/zerosync/giza", version = "0.1", default-features = false }
+giza_prover = { package = "giza-prover", git = "https://github.com/zerosync/giza", version = "0.1", default-features = false }
