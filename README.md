@@ -26,19 +26,19 @@ func main{output_ptr: felt*}() {
 
 ``` 
 
-This cairo program is compiled using
+This program is compiled with
 ```
 cairo-compile program.cairo --output program.json
 ```
 
-then, the memory and trace files are generated using
+then, the memory and trace files are generated with
 
 ```
 cairo-run --program program.json --trace_file trace.bin --layout all --memory_file memory.bin
 ```
 
 The code panics in this line from `main.rs`
-```
+```rust
 let (_proof, _pub_inputs) = giza_prover::prove_trace(trace, &proof_options).unwrap();
 ```
 
